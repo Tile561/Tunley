@@ -21,30 +21,34 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="272" id="bqy-mE-dOq" customClass="TrackCell" customModule="lab_tunley" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="272"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrackCell" rowHeight="591" id="bqy-mE-dOq" customClass="TrackCell" customModule="lab_tunley" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="591"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bqy-mE-dOq" id="Svy-Fp-bGX">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="272"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="591"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="s5P-Kh-WPc">
-                                                    <rect key="frame" x="0.0" y="11" width="298" height="124"/>
+                                                    <rect key="frame" x="10" y="10" width="373" height="571"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l5a-hm-W3c">
-                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="124"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="100" id="A0l-Yx-T6F"/>
+                                                                <constraint firstAttribute="width" constant="100" id="XJf-YR-I2X"/>
+                                                            </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ASe-8F-nly">
-                                                            <rect key="frame" x="166" y="0.0" width="132" height="70"/>
+                                                            <rect key="frame" x="116" y="0.0" width="257" height="70"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="trackName" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6M-a2-MYB">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="132" height="33.666666666666664"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="257" height="33.666666666666664"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="artistName" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMN-qB-Hz4">
-                                                                    <rect key="frame" x="0.0" y="49.666666666666664" width="132" height="20.333333333333336"/>
+                                                                    <rect key="frame" x="0.0" y="49.666666666666664" width="257" height="20.333333333333336"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -52,16 +56,13 @@
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="l5a-hm-W3c" firstAttribute="bottom" secondItem="s5P-Kh-WPc" secondAttribute="bottomMargin" id="trq-X1-On2"/>
-                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="s5P-Kh-WPc" secondAttribute="bottom" constant="137" id="KTh-6N-cqJ"/>
-                                                <constraint firstItem="s5P-Kh-WPc" firstAttribute="top" secondItem="Svy-Fp-bGX" secondAttribute="topMargin" id="obZ-lc-LUQ"/>
-                                                <constraint firstItem="s5P-Kh-WPc" firstAttribute="leading" secondItem="Svy-Fp-bGX" secondAttribute="leadingMargin" constant="-20" id="qvj-Qo-iN3"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="s5P-Kh-WPc" secondAttribute="trailing" constant="75" id="wBQ-R6-CNh"/>
+                                                <constraint firstAttribute="bottom" secondItem="s5P-Kh-WPc" secondAttribute="bottom" constant="10" id="4UV-HL-Pkb"/>
+                                                <constraint firstItem="s5P-Kh-WPc" firstAttribute="leading" secondItem="Svy-Fp-bGX" secondAttribute="leading" constant="10" id="6mu-92-m6c"/>
+                                                <constraint firstAttribute="trailing" secondItem="s5P-Kh-WPc" secondAttribute="trailing" constant="10" id="GDa-qJ-9kl"/>
+                                                <constraint firstItem="s5P-Kh-WPc" firstAttribute="top" secondItem="Svy-Fp-bGX" secondAttribute="top" constant="10" id="Ja7-7D-W0I"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

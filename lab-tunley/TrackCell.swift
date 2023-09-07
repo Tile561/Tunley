@@ -30,7 +30,6 @@ class TrackCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    
     // Configures the cell's UI for the given track.
     func configure(with track: Track) {
         trackNameLabel.text = track.trackName
