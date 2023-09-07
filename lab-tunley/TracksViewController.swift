@@ -8,7 +8,8 @@
 import UIKit
 
 class TracksViewController: UIViewController {
-
+    
+    var tracks: [Track] = []
     // TODO: Pt 1 - Add a tracks property
 
 
@@ -16,7 +17,8 @@ class TracksViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tracks = Track.mockTracks
+        print(tracks)
         // TODO: Pt 1 - Set tracks property with mock tracks array
 
         

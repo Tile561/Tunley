@@ -26,3 +26,29 @@ func formattedTrackDuration(with milliseconds: Int) -> String {
         return "\(minutes):0\(truncatedSeconds)"
     }
 }
+
+struct Track {
+    let trackName: String
+    let artistName: String
+    let artworkUrl100: URL
+}
+
+extension Track {
+    static var mockTracks: [Track]  = [
+        
+        Track(trackName: "Tree Among Shrubs",
+                      artistName: "Men I Trust",
+                      artworkUrl100: URL(string:"https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/42/9a/55/429a556c-fc32-deba-4859-3bfbdef15369/859749102588_cover.jpg/100x100bb.jpg")!),
+        Track(trackName: "I Hope to Be Around - Single",
+                      artistName: "Men I Trust",
+                      artworkUrl100: URL(string:"https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/dd/3e/fc/dd3efc16-a4d3-274a-5794-7a6920517e3e/859723951126_cover.jpg/100x100bb.jpg")!),
+        Track(trackName: "Norton Commander (Album V)",
+                      artistName: "Men I Trust",
+                      artworkUrl100: URL(string:"https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/36/56/4d/36564db2-693a-38c0-a520-89e1095c9ac0/artwork.jpg/100x100bb.jpg")!),
+        
+        
+        
+        
+        
+        ]
+}
